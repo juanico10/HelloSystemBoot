@@ -17,7 +17,7 @@ sudo apt curl -y
 Descargar el servicio [hello.service](https://github.com/JuanRodenas/HelloSystemBoot/blob/main/hello.service)
 Y modicamos la siguiente ruta:
 ~~~~
-ExecStart=/usr/bin/bash	/root/hello.sh
+ExecStart=/usr/bin/bash	/root/scripts/hello.sh
 ~~~~
 ### Copiar el archivo hello.service y asignarle los permisos 0644
 ~~~~
