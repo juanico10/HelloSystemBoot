@@ -1,4 +1,4 @@
-# Send message notification Telegram on boot
+# Enviar notificación de mensaje Telegram en el arranque
 Para poder recibir los mensajes en el Telegram, debes obtener el Token y chat_id de tu bot de telegram, puedes solicitarlos aquí desde la App de Telegram:
 - Bot token: https://t.me/botfather
 - Chat_ID: https://t.me/myidbot
