@@ -1,5 +1,11 @@
 # Send message notification Telegram on boot
+Para poder recibir los mensajes en el Telegram, debes obtener el Token y chat_id de tu bot de telegram, puedes solicitarlos aquí desde la App de Telegram:
+- Bot token: https://t.me/botfather
+- Chat_ID: https://t.me/myidbot
 
+![alt text](https://github.com/JuanRodenas/HelloSystemBoot/blob/main/hellotelegram.png)
+
+Empezamos a instalar el bot de inicio:
 ### Install packages
 ~~~~
 sudo apt update
