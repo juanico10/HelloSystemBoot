@@ -15,7 +15,11 @@ sudo apt curl -y
 
 ### Edita el archivo hello.service para cambiar la ruta donde tienes el script hello.sh
 Descargar el servicio [hello.service](https://github.com/JuanRodenas/HelloSystemBoot/blob/main/hello.service)
-Y modicamos la siguiente ruta:
+Creamos el archivo hello.service:
+~~~~
+nano hello.service
+~~~~
+Y modicamos la siguiente ruta, donde irá el hello.sh.sh:
 ~~~~
 ExecStart=/usr/bin/bash	/root/scripts/hello.sh
 ~~~~
@@ -26,6 +30,10 @@ chmod 0644 /etc/systemd/system/hello.service
 ~~~~
 ### Edita el script hello.sh, para añadir tu token de bot, y tu chat_id, renombra el script elegido a hello.sh
 Descargar el script [script hello.sh](https://github.com/JuanRodenas/HelloSystemBoot/blob/main/hello.sh)
+Creamos el archivo hello.sh:
+~~~~
+nano hello.sh
+~~~~
 Y modicamos lo siguiente:
 ~~~~
 TOKEN_BOT="YOUR_TOKEN_BOT"
