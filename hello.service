@@ -3,9 +3,7 @@ Description=Send message telegram on boot
 After=multi-user.target
 
 [Service]
-Type=simple
-Restart=always
-User=root
+Type=idle
 ExecStart=/usr/bin/bash /root/scripts/hello.sh
 
 [Install]
