@@ -10,7 +10,7 @@ Empezamos a instalar el bot de inicio. Para que funcione necesita permisos, por 
 ~~~~
 sudo apt update
 sudo apt upgrade -y
-sudo apt curl -y
+sudo apt install curl -y
 ~~~~
 
 ### Edita el archivo hello.service para cambiar la ruta donde tienes el script hello.sh
