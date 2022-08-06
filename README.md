@@ -30,8 +30,8 @@ chmod 0644 /etc/systemd/system/hello.service
 ~~~~
 ### Restart service, and enabled
 ~~~~
-systemctl daemon-reload
 systemctl enable hello.service
+systemctl daemon-reload
 ~~~~
 ### Edita el script hello.sh, para añadir tu token de bot, y tu chat_id, renombra el script elegido a hello.sh
 Descargar el script [script hello.sh](https://github.com/JuanRodenas/HelloSystemBoot/blob/main/hello.sh)
