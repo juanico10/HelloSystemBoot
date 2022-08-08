@@ -10,7 +10,7 @@ IP=`hostname -I | awk '{print $1}'`
 PUBLIC_IP=$(curl -s -X GET http://checkip.amazonaws.com)
 cpu=$(cat /sys/class/thermal/thermal_zone0/temp)
 FREERAM=$(free -mh | grep Mem | awk '{print $4}')
-TOTALRAM=$(free -mh | grep Mem | awk '{print $2}')
+USEDRAM=$(free -mh | grep Mem | awk '{print $3}')
 
 
 # Envío del mensaje
@@ -22,7 +22,7 @@ else
         curl -s -X POST $URL \
         -d chat_id=$ID \
         -d parse_mode=HTML \
-        -d text="$(printf "$MSG<code>\n\t\t- Host: $servidor\n\t\t- CPU temp: $((cpu/1000))°\n\t\t- RAM: Free $FREERAM/ Total $TOTALRAM\n\t\t- IP: $IP\n\t\t- IP public: $PUBLIC_IP</code>")" \
+        -d text="$(printf "$MSG<code>\n\t\t- Host: $servidor\n\t\t- CPU temp: $((cpu/1000))°\n\t\t- RAM: Used $USEDRAM/ Free $FREERAM\n\t\t- IP: $IP\n\t\t- IP public: $PUBLIC_IP</code>")" \
                 > /dev/null 2>&1
         exit 0
 fi
