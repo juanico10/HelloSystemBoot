@@ -25,7 +25,7 @@ ExecStart=/usr/bin/bash	/root/scripts/hello.sh
 ~~~~
 ### Copiar el archivo hello.service y asignarle los permisos 0644
 ~~~~
-cp hello.service /etc/systemd/system/
+cp hello.service /etc/systemd/system/ && \
 chmod 0644 /etc/systemd/system/hello.service
 ~~~~
 ### Restart service, and enabled
