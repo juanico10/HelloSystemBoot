@@ -15,7 +15,7 @@ USEDRAM=$(free -mh | grep Mem | awk '{print $3}')
 
 # Envío del mensaje
 /usr/bin/ping -c2 $DNS > /dev/null 2>&1
-if [ $? -ne 0 ]
+if [ $? != 0 ]
 then
         exit 0
 else
