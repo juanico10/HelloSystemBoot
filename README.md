@@ -8,8 +8,8 @@ Para poder recibir los mensajes en el Telegram, debes obtener el Token y chat_id
 Empezamos a instalar el bot de inicio. Para que funcione necesita permisos, por lo que instalar en el usuario ROOT:
 ### Instalar los paquetes y actualizamos el sistema
 ~~~~
-sudo apt update
-sudo apt upgrade -y
+sudo apt update && \
+sudo apt upgrade -y && \
 sudo apt install curl -y
 ~~~~
 
@@ -31,6 +31,7 @@ chmod 0644 /etc/systemd/system/hello.service
 ### Restart service, and enabled
 ~~~~
 systemctl enable hello.service && \
+systemctl start hello.service && \
 systemctl daemon-reload
 ~~~~
 ### Edita el script hello.sh, para añadir tu token de bot, y tu chat_id, renombra el script elegido a hello.sh
