@@ -3,9 +3,8 @@ Description=Send message telegram on boot
 After=multi-user.target
 
 [Service]
-#Type=idle
 Type=simple
-ExecStartPre=/bin/sleep 240  # Retraso de 4 minutos
+ExecStartPre=/bin/sleep 240
 ExecStart=/usr/bin/bash /root/scripts/hello.sh
 
 [Install]
