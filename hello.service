@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStartPre=/bin/sleep 240
+ExecStartPre=/bin/sleep 30
 ExecStart=/usr/bin/bash /root/scripts/hello.sh
 
 [Install]
