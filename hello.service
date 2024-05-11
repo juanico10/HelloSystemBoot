@@ -7,6 +7,13 @@ Type=simple
 ExecStartPre=/bin/sleep 30
 ExecStart=/usr/bin/bash /root/scripts/hello.sh
 
+# Filesystem lockdown
+ProtectHome=true
+ProtectSystem=full
+PrivateTmp=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+
 # Execute Mappings
 MemoryDenyWriteExecute=true
 
