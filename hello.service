@@ -7,5 +7,14 @@ Type=simple
 ExecStartPre=/bin/sleep 30
 ExecStart=/usr/bin/bash /root/scripts/hello.sh
 
+# Execute Mappings
+MemoryDenyWriteExecute=true
+
+# Privilege escalation
+NoNewPrivileges=true
+
+# Real-time
+RestrictRealtime=true
+
 [Install]
 WantedBy=multi-user.target
